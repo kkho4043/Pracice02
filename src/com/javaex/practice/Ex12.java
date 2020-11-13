@@ -31,13 +31,18 @@ public class Ex12 {
 			System.out.println("결과는 : " + (x * y));
 			break;
 		case "/":
-			if(x > y) {
-				System.out.println("결과는 : " + (x / y));
+			if(x == 0 || y == 0) {
+				System.out.println("계산할 수 없습니다.");
+				break;
 			}else {
-				System.out.println("결과는 : " + (y / x));
+				if(x > y) {
+					System.out.println("결과는 : " + (x / y));
+				}else {
+					System.out.println("결과는 : " + (y / x));
+				}
+				break;
 			}
-			break;
-
+			
 		default:
 			System.out.println("계산할 수 없는 기호입니다.");
 			break;

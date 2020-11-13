@@ -20,7 +20,7 @@ public class Ex05 {
 		
 		double Standard_weightl = (stature - 100) * 0.9;  
 		
-		sc.close();
+		
 		
 		if(weightl > Standard_weightl) {
 			System.out.println("과체중 입니다");
@@ -30,8 +30,9 @@ public class Ex05 {
 			System.out.println("저체중 입니다");
 		}
 		System.out.println("표준체중 : " + Standard_weightl);
-		//15:2 /19:2 /20 :1 / 21:1/ 100:1
 		
+		
+		sc.close();
 		
 	}
 }
