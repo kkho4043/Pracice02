@@ -16,7 +16,7 @@ public class Ex13 {
 		if(x > 0) {
 			end = 7 * x + 2;
 		}else {
-			end = (x * x * x) - 9 * x + 2;
+			end = Math.pow(x,3) - (9 * x) + 2;
 		}
 		System.out.println("계산결과는 " + end);
 		sc.close();
