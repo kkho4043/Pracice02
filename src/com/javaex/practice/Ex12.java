@@ -8,7 +8,7 @@ public class Ex12 {
 		System.out.print("기호 : ");
 		
 		Scanner sc = new Scanner(System.in);
-		String sign = sc.nextLine( );
+		String sign = sc.nextLine();
 		
 		
 		System.out.print("숫자1 : ");
@@ -35,11 +35,12 @@ public class Ex12 {
 				System.out.println("계산할 수 없습니다.");
 				break;
 			}else {
-				if(x > y) {
-					System.out.println("결과는 : " + (x / y));
-				}else {
-					System.out.println("결과는 : " + (y / x));
-				}
+				/*
+				 * if(x > y) { System.out.println("결과는 : " + (x / y));
+				 * }else{
+				 * System.out.println("결과는 : " + (y / x)); }
+				 *///작은 값에서 큰값을 나눌수도 있으므로.
+				System.out.println("결과는 : " + (x / y));
 				break;
 			}
 			
